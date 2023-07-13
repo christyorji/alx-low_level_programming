@@ -16,7 +16,7 @@ const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-
 
 	while (bytes_written < len)
 	{
-	ssize_t result = write(STDERR_FILENO, message + bytes_written, len - bytes_written);
+ssize_t result = write(STDERR_FILENO, message + bytes_written, len -  bytes_written);
 		if (result < 0)
 		{
 		write_error = 1;
@@ -30,6 +30,6 @@ const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-
 	/* Error writing to stderr */
 	_exit(1);
 	}
-
 return 1;
 }
+
