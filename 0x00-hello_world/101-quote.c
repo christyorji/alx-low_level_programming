@@ -9,14 +9,16 @@
  */
 int main(void)
 {
-const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+const char *message = "and that piece of art is useful\" 
+- Dora Korpar, 2015-10-19\n";
 	ssize_t len = strlen(message);
 	ssize_t bytes_written = 0;
 	int write_error = 0;
 
 	while (bytes_written < len)
 	{
-ssize_t result = write(STDERR_FILENO, message + bytes_written, len -  bytes_written);
+ssize_t result = write(STDERR_FILENO, message 
++ bytes_written, len -  bytes_written);
 		if (result < 0)
 		{
 		write_error = 1;
@@ -30,6 +32,5 @@ ssize_t result = write(STDERR_FILENO, message + bytes_written, len -  bytes_writ
 	/* Error writing to stderr */
 	_exit(1);
 	}
-return 1;
+return (1)
 }
-
