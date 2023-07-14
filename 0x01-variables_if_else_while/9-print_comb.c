@@ -1,44 +1,23 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Entry point of the program
- *
- * Description: Prints all possible combinations of single-digit numbers
- * in ascending order, separated by ", ".
- *
- * Return: Always 0 (Success)
- */
+* main - entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	putchar('0');
-	putchar(',');
-	putchar(' ');
-	putchar('1');
-	putchar(',');
-	putchar(' ');
-	putchar('2');
-	putchar(',');
-	putchar(' ');
-	putchar('3');
-	putchar(',');
-	putchar(' ');
-	putchar('4');
-	putchar(',');
-	putchar(' ');
-	putchar('5');
-	putchar(',');
-	putchar(' ');
-	putchar('6');
-	putchar(',');
-	putchar(' ');
-	putchar('7');
-	putchar(',');
-	putchar(' ');
-	putchar('8');
-	putchar(',');
-	putchar(' ');
-	putchar('9');
-	putchar('\n');
-
-	return 0;
+int i;
+for (i = 0; i < 10; i++)
+{
+putchar('0' + i);
+if (i != 9)
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+return (0);
 }
