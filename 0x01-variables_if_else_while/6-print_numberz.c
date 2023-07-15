@@ -13,5 +13,5 @@ int main() {
     // Print a new line using putchar
     putchar('\n');
 
-    return 0;
+    return (0);
 }
