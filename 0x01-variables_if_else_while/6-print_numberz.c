@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
-* main - entry point
-*
-* Return: Always 0 (Success)
-*/
-int main(void)
-{
-int i;for (i = 0; i < 10; i++)
-{
-putchar('0' + i);
-if (i != 9)
-}
-putchar('\n');
-return (0);
+
+int main() {
+    // Loop from 0 to 9
+    int i;
+    for (i = 0; i <= 9; i++) {
+        // Convert the number to its ASCII representation
+        char digit = i + '0';
+        // Print the digit using putchar
+        putchar(digit);
+    }
+
+    // Print a new line using putchar
+    putchar('\n');
+
+    return 0;
 }
