@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *  * _strcat - concatenates 2 strings.
- *   * @dest: string with concatenation
- *    * @src: string to be concatenated
- *     * Return: Always 0.
- *      */
+ * _strcat - concatenates 2 strings.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * Return: Always 0.
+ */
 char *_strcat(char *dest, char *src)
 {
 int lengthD, lengthS;
