@@ -6,8 +6,7 @@
  *
  * @argc: counts the number of command line arguments
  * @argv: array of pointers that contain the command line argv
- *
- * Return :(0) Always sucessfull
+ * Return:(0) Always successfull
  */
 int main(int argc, char *argv[])
 {
